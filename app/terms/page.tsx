@@ -165,22 +165,6 @@ export default function Terms() {
           </section>
         </div>
       </div>
-
-      {/* Copyright - positioned at bottom */}
-      <div className={styles.copyright}>
-        <Image 
-          src="/images/copywrite.svg" 
-          alt="© 2025" 
-          width={80} 
-          height={40} 
-          className={styles.copyrightImage} 
-        />
-        <div className={styles.terms}>
-          <Link href="/terms">Terms of Use</Link>
-          <Link href="/privacy">Privacy Policy</Link>
-          <a href="mailto:support@glow.club">support@glow.club</a>
-        </div>
-      </div>
     </main>
   );
 }
