@@ -1,0 +1,250 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  background-image: url('/images/background-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 2rem 3rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+  backdrop-filter: blur(10px);
+}
+
+.logoLink {
+  display: inline-block;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.logoLink:hover .logo {
+  opacity: 1;
+}
+
+.contentContainer {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 2rem 10rem;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem;
+  color: #fff;
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.lastUpdated {
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.intro p {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+}
+
+.warning {
+  font-weight: 600;
+  color: #fff !important;
+  margin-top: 1.5rem !important;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subsection {
+  margin-bottom: 1.5rem;
+}
+
+.subsection h3 {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.subsection p {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.section p {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+}
+
+.section ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.section ul li {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+.subsection ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.subsection ul li {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+.section a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.section a:hover {
+  color: #fff;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 10;
+}
+
+.copyrightImage {
+  opacity: 0.6;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0.6;
+}
+
+.terms a {
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  transition: opacity 0.3s ease;
+}
+
+.terms a:hover {
+  opacity: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem;
+  }
+
+  .contentContainer {
+    padding: 7rem 1rem 10rem;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+
+  .subsection h3,
+  .subsection p,
+  .section p,
+  .section ul li,
+  .subsection ul li {
+    font-size: 0.875rem;
+  }
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .terms {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
