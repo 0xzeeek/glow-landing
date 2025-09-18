@@ -20,10 +20,5 @@ body {
   color: hsl(var(--foreground));
   font-family: var(--font-main);
   background-color: #000;
-  background-image: url('/images/background-2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100vh;
 }

@@ -5,28 +5,42 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* Content Container */}
-      {/* GLOW Logo */}
-      <div className={styles.logoWrapper}>
-        <Image src="/images/logo-2.svg" alt="GLOW" width={1000} height={250} className={styles.logo} priority />
+      {/* Background video with image fallback */}
+      <video
+        className={styles.backgroundVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/images/background-2.png"
+      >
+        <source src="/videos/background.mp4" type="video/mp4" />
+      </video>
+      
+      <div className={styles.header}>
+        <Image src="/images/logo-2.svg" alt="GLOW" width={147} height={30} priority />
+        <div className={styles.headerTitle}>The new way to trade culture.</div>
+        <div className={styles.headerSubtitle}>Creator currencies. Powered by fans.</div>
       </div>
 
       <div className={styles.contentContainer}>
-        {/* Tagline */}
-        {/* <div className={styles.tagline}>
-          <p className={styles.taglineText}>The new way to trade culture.</p>
-          <p className={styles.taglineText}>Your own currency. Built with your fans.</p>
-        </div> */}
+        <Image src="/images/app-icon.svg" alt="Glow" width={150} height={150} />
+        <div className={styles.downloadButton}>
+          Download Coming Soon
+        </div>
       </div>
 
       {/* Copyright - positioned at bottom */}
-      <div className={styles.copyright}>
-        <Image src="/images/copywrite.svg" alt="© 2025" width={80} height={40} className={styles.copyrightImage} />
+      <div className={styles.footer}>
         <div className={styles.terms}>
-          <Link href="/terms">Terms of Use</Link>
-          <Link href="/privacy">Privacy Policy</Link>
-          <a href="mailto:support@glow.club">support@glow.club</a>
+          <Link href="https://x.com/glowdotclub" className={styles.x}>
+            <Image src="/icons/x.svg" alt="X" width={20} height={20} />
+            <span style={{ color: "#fff" }}>Glow on X</span>
+          </Link>{" "}
+          / <Link href="/privacy">Privacy Policy</Link> / <Link href="/terms">Terms of Use</Link>
+          {/* <a href="mailto:support@glow.club">support@glow.club</a> */}
         </div>
+        <div className={styles.copyright}>&copy; 2025 Glow Systems Inc.</div>
       </div>
     </main>
   );
