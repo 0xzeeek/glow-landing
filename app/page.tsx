@@ -12,9 +12,9 @@ export default function Home() {
         loop
         muted
         playsInline
-        poster="/images/background-2.png"
+        poster="/images/background3.png"
       >
-        <source src="/videos/background.mp4" type="video/mp4" />
+        <source src="/videos/background3.mp4" type="video/mp4" />
       </video>
       
       <div className={styles.header}>
