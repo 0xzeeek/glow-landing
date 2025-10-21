@@ -2,33 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const sfPro = localFont({
-  src: "./fonts/SFPro-regular.otf",
-  variable: "--font-main",
-  weight: "100 900",
-});
-const dgmTypeset = localFont({
-  src: "./fonts/DGMTypeset-regular.otf",
-  variable: "--font-mono",
-  weight: "100 900",
-});
-
-const diatypeRoundedRegular = localFont({
-  src: "./fonts/ABCDiatypeRounded-Regular.otf",
-  variable: "--font-diatype-rounded",
-  weight: "100 900",
-});
-
-const diatypeRoundedBold = localFont({
-  src: "./fonts/ABCDiatypeRounded-Bold.otf",
-  variable: "--font-diatype-rounded-bold",
-  weight: "100 900",
-});
-
-const diatypeRoundedMedium = localFont({
-  src: "./fonts/ABCDiatypeRounded-Medium.otf",
-  variable: "--font-diatype-rounded-medium",
-  weight: "100 900",
+const diatype = localFont({
+  src: "./fonts/ABCDiatypeVariable.ttf",
+  variable: "--font-diatype",
+  weight: "200 900", // the full range
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -55,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sfPro.variable} ${dgmTypeset.variable} ${diatypeRoundedRegular.variable} ${diatypeRoundedBold.variable} ${diatypeRoundedMedium.variable}`}
+        className={`${diatype.variable}`}
       >
         {children}
       </body>

@@ -18,7 +18,7 @@ html, body {
 
 body {
   color: hsl(var(--foreground));
-  font-family: var(--font-main);
+  font-family: var(--font-diatype);
   background-color: #000;
   min-height: 100vh;
 }

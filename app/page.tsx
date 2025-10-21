@@ -18,29 +18,32 @@ export default function Home() {
       </video>
       
       <div className={styles.header}>
-        <Image src="/images/logo-2.svg" alt="GLOW" width={147} height={30} priority />
-        <div className={styles.headerTitle}>The new way to trade culture.</div>
-        <div className={styles.headerSubtitle}>Creator currencies. Powered by fans.</div>
+        <Image src="/images/logo-3.svg" alt="GLOW" width={111} height={59} priority />
+        <div className={styles.headerTitle}>Get paid<br />because it&apos;s<br />you, duh.</div>
+        <Link href="#" className={styles.headerDownloadButton}>
+          <Image src="/icons/apple.svg" alt="Apple" width={16} height={16} />
+          <span>DOWNLOAD</span>
+        </Link>
       </div>
-
+{/* 
       <div className={styles.contentContainer}>
         <Image src="/images/app-icon.svg" alt="Glow" width={150} height={150} />
         <div className={styles.downloadButton}>
           Download Coming Soon
         </div>
-      </div>
+      </div> */}
 
       {/* Copyright - positioned at bottom */}
       <div className={styles.footer}>
         <div className={styles.terms}>
           <Link href="https://x.com/glowdotclub" className={styles.x}>
             <Image src="/icons/x.svg" alt="X" width={20} height={20} />
-            <span style={{ color: "#fff" }}>Glow on X</span>
+            <span style={{ color: "#fff" }}>GLOW ON X</span>
           </Link>{" "}
           / <Link href="/privacy">Privacy Policy</Link> / <Link href="/terms">Terms of Use</Link>
           {/* <a href="mailto:support@glow.club">support@glow.club</a> */}
         </div>
-        <div className={styles.copyright}>&copy; 2025 Glow Systems Inc.</div>
+        <div className={styles.copyright}><span style={{ fontSize: "20px" }}>&copy;</span> 2025 Glow Systems Inc.</div>
       </div>
     </main>
   );
