@@ -22,7 +22,7 @@ export default function Home() {
         <div className={styles.headerTitle}>Get paid<br />because it&apos;s<br />you, duh.</div>
         <Link href="#" className={styles.headerDownloadButton}>
           <Image src="/icons/apple.svg" alt="Apple" width={16} height={16} />
-          <span>DOWNLOAD</span>
+          <span>DOWNLOAD COMING SOON</span>
         </Link>
       </div>
 {/* 
