@@ -36,7 +36,7 @@ export default function Home() {
       {/* Copyright - positioned at bottom */}
       <div className={styles.footer}>
         <div className={styles.terms}>
-          <Link href="https://x.com/glowdotclub" className={styles.x}>
+          <Link href="https://x.com/thisisglowclub" className={styles.x}>
             <Image src="/icons/x.svg" alt="X" width={20} height={20} />
             <span style={{ color: "#fff" }}>GLOW ON X</span>
           </Link>{" "}
