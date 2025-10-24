@@ -10,17 +10,17 @@ const diatype = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Glow - The new way to trade culture",
+  title: "Glow",
   description: "Your own currency. Built with your fans.",
   keywords: ["glow", "culture", "trading", "currency", "fans", "community"],
   openGraph: {
-    title: "Glow - The new way to trade culture",
+    title: "Glow",
     description: "Your own currency. Built with your fans.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Glow - The new way to trade culture",
+    title: "Glow",
     description: "Your own currency. Built with your fans.",
   },
 };
