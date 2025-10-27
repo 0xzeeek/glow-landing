@@ -1,5 +1,9 @@
 .main {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 100dvh;
   width: 100dvw;
   overflow: hidden;
@@ -48,6 +52,7 @@
   bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 .contentContainer {
@@ -128,7 +133,7 @@
   min-width: 50%;
   min-height: 100%;
   width: auto;
-  height: 100vh;
+  height: 100dvh;
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
