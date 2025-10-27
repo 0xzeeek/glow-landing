@@ -47,16 +47,6 @@
   position: absolute;
   bottom: 120px;
   left: 50%;
-  transform: translateX(-50%);
-}
-
-.headerDownloadButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-}
-
-.headerDownloadButton:active {
-  transform: translateY(0);
 }
 
 .contentContainer {
@@ -134,10 +124,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
+  min-width: 50%;
   min-height: 100%;
   width: auto;
-  height: auto;
+  height: 100dvh;
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
